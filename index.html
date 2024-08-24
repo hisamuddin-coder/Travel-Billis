@@ -6,19 +6,30 @@
     <title>Travel Billis</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--javascript-->
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header>
-      <div class="container">
-        <!--Navbar-->
-        <nav id="nav" class="nav">
-          <!--logo-->
-          <a href="index.html" class="logo">
-            TravelBillis
-            <span>Explore the world</span>
-          </a>
-          <!--links container-->
-          <div class="links-container">
+      <section class="navbar">
+        <div class="container">
+          <!--Navbar-->
+          <nav id="nav" class="nav flex-center">
+            <!--logo-->
+            <a href="index.html" class="logo">
+              TravelBillis
+              <span>Explore the world</span>
+            </a>
+            <!--links container-->
             <ul class="nav-links flex-center">
               <li><a href="index.html" class="nav-link active">Home</a></li>
               <li><a href="#about" class="nav-link">About</a></li>
@@ -26,18 +37,32 @@
               <li><a href="#reviews" class="nav-link">Reviews</a></li>
               <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
-          </div>
-          <!--toggle-btn-->
-          <div class="nav-toggle open flex-center">
-            <span></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="hero" class="section hero">
-        <div class="container"></div>
+            <!--toggle-btn-->
+            <div class="nav-toggle flex-center">
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+            </div>
+          </nav>
+        </div>
       </section>
-    </main>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <article class="hero-content">
+              <h1 class="hero-title">
+                Let us plan you a perfect
+                <span>India holiday</span>
+              </h1>
+              <p class="hero-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellat, eos?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main></main>
   </body>
 </html>
