@@ -6,7 +6,10 @@
 
   --ff-primary: "Montserrat", sans-serif;
   --ff-secondary: "Ubuntu", sans-serif;
+
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 *,
 *::before,
 *::after {
@@ -19,7 +22,7 @@ html {
 }
 body {
   color: #141414;
-  background-color: #eee;
+  background-color: #fff;
   font-family: var(--ff-primary);
   font-weight: 400;
 }
@@ -249,6 +252,8 @@ h1 span {
   font-size: 18px;
 }
 
+/*------------ section-01 ----------*/
+
 h2 {
   color: #4a4a4a;
   font-size: 2rem;
@@ -346,4 +351,70 @@ h2 {
 }
 .item--1 img {
   max-height: 100%;
+}
+/*------------ section-02 ----------*/
+.section-header {
+  margin-bottom: 2rem;
+}
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.section-header a {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.section-header a span {
+  color: var(--clr-primary);
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 1.25%;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.card {
+  min-width: 19%;
+}
+.card-img {
+  margin-bottom: 10px;
+}
+.card-img img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+.card .card-desc h4 {
+  color: #4a4a4a;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  margin-bottom: 2.5px;
+}
+.slides-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.slide-btn {
+  color: #4a4a4a;
+  background-color: transparent;
+  font-size: 1.25rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgb(200, 199, 199);
+  transition: all 400ms linear;
+}
+.slide-btn:hover {
+  color: #fff;
+  border-color: var(--clr-primary);
+  background-color: var(--clr-primary);
 }
